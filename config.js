@@ -1,62 +1,38 @@
-global.DeveloperMode = 'false' //true Or false
-global.linkGC = ['https://chat.whatsapp.com/KihEAYjKr04LI4uUrbiiip']
-global.Owner = {
-  // use the phone number with the country code, for example Indonesia '62' America '1' etc
-  '6289526350998': { // put your number here
-    name: 'benniismael',
-    isDev: true, // if true this number will send if bot have bug and developer mode true
-    isReport: true, // if true this number will send if user use command /report or /join
-    isCreator: true // if true this number will send if user use command /owner or /creator
-  }
-}
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+let fs = require('fs')
+let fetch = require('node-fetch')
+global.tum = fs.readFileSync('./src/Ah5.jpeg')
+global.tum2 = fs.readFileSync('./src/emror.jpeg')
+global.thumb = 'https://i.ibb.co/34PV5yH/By-Relldev.jpg'
+global.thumb2 = fs.readFileSync('./src/emror.jpeg')
+global.owner = ['6289526350998', '6285878056250', '6289516809533'] // Put your number here
+global.mods = ['6289526350998'] // Want some help?
+global.prems = ['6289526350998','6285878056250','6289516809533'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
-  pencarikode: 'https://pencarikode.xyz',
-  rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
-  dhnjing: 'https://dhnjing.xyz',
-  bx: 'https://bx-hunter.herokuapp.com',
-  neoxr: 'https://neoxr-api.herokuapp.com',
-  nzcha: 'http://nzcha-apii.herokuapp.com',
-  bg: 'http://bochil.ddns.net',
-  fdci: 'https://api.fdci.se',
-  bsbt: 'https://bsbt-api-rest.herokuapp.com',
-  botstyle: 'https://botstyle-api.herokuapp.com',
-  zekais: 'http://zekais-api.herokuapp.com',
-  zeks: 'https://api.zeks.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
-  hardianto: 'https://hardianto-chan.herokuapp.com'
-  
+  zeks: 'https://api.zeks.xyz',
+  pencarikode: 'https://pencarikode.xyz',
+  LeysCoder: 'https://leyscoders-api.herokuapp.com', 
+  Dehan: 'https://dhnjing.xyz',
+  Velgrynd: 'https://velgrynd.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'benniismaelapikey',
-  'https://server-api-rey.herokuapp.com': 'apirey',
-  'https://pencarikode.xyz': 'pais',
-  'https://neoxr-api.herokuapp.com': 'yntkts',
-  'https://bx-hunter.herokuapp.com': 'Ikyy69',
-  'https://bsbt-api-rest.herokuapp.com': 'benniismaelapikey',
-  'https://botstyle-api.herokuapp.com': 'daftar dulu yaa',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.xteam.xyz': 'd37372311698ed1d',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://hardianto-chan.herokuapp.com': 'hardianto'
+  'https://api.zeks.xyz': 'Nyarlathotep',
+  'https://pencarikode.xyz': 'pais',
+  'https://leyscoders-api.herokuapp.com': 'dappakntlll',
+  'https://dhnjing.xyz': 'e2645065aaced89861b4'
 }
 
 // Sticker WM
-global.packname = 'Benniganteng \'ig : Beni_230'
-global.author = 'Benniismael'
-
-global.wait = '_*tunggu..*_'
-global.eror = '_*Server Error*_'
-global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-
-
+global.packname = 'I hope you\'re fine'
+global.author = 'LitRHap'
 global.multiplier = 69 // The higher, The harder levelup
 
-let fs = require('fs')
 let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
